@@ -6,3 +6,4 @@ cache: yarn
 env:
   global:
   - ENCRYPTION_LABEL: f7d6e42161b1
+  - COMMIT_AUTHOR_EMAIL: travis-ci@geemans-a11y-training.io
