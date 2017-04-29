@@ -12,10 +12,10 @@ const Navbar = ({toc}) => (
   <div>
     <Title>
       Geeman's<br/>A11y guide</Title>
-    {toc.map((item) => (<StyledLink to={item.path}>
+    {toc.map((item,i) => (<StyledLink key={i} to={item.path}>
       {item.label}
-      {item.routes ? item.routes.map((subItem) => (
-        <StyledSubLink to={subItem.path}>{subItem.label}</StyledSubLink>
+      {item.routes ? item.routes.map((subItem,i) => (
+        <StyledSubLink key={i} to={subItem.path}>{subItem.label}</StyledSubLink>
       )): null}
     </StyledLink> ))}
   </div>

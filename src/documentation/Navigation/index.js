@@ -1,11 +1,11 @@
 import React from 'react';
 import Section from '../../components/Section';
 
-const Colour = () => (
+const Index = () => (
   <div>
-    <Section title="Colour" level="2">
+    <Section title="Navigation" level="2">
     </Section>
   </div>
 );
 
-export default Colour;
+export default Index;

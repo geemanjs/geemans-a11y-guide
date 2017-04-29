@@ -1,11 +1,11 @@
 import React from 'react';
 import Section from '../../components/Section';
 
-const Colour = () => (
+const Links = () => (
   <div>
-    <Section title="Colour" level="2">
+    <Section title="Links" level="2">
     </Section>
   </div>
 );
 
-export default Colour;
+export default Links;
