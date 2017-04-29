@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
-import { BrowserRouter as Router, Route } from 'react-router-dom';
+import { HashRouter as Router, Route } from 'react-router-dom';
 
 import toc from './toc';
 import StyledNavbar from './components/Navbar/StyledNavbar';
 import ContentWrapper from './components/ContentWrapper';
+
 
 const Routes = ({route}) => (
   <div>
