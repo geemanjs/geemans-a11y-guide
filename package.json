@@ -1,7 +1,7 @@
 {
   "name": "a11y-training",
   "version": "0.1.0",
-  "private": true,
+  "hoempage":"https://geeman201.github.io/geemans-a11y-guide/",
   "dependencies": {
     "react": "^15.5.4",
     "react-dom": "^15.5.4",
