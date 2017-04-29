@@ -9,15 +9,15 @@ TARGET_BRANCH="gh-pages"
 
 function doCompile {
   yarn build
-  cp -R build out
+  cp -R build/** out
 }
 
 # Pull requests and commits to other branches shouldn't try to deploy, just build to verify
-if [ "$TRAVIS_PULL_REQUEST" != "false" -o "$TRAVIS_BRANCH" != "$SOURCE_BRANCH" ]; then
-    echo "Skipping deploy; just doing a build."
-    doCompile
-    exit 0
-fi
+#if [ "$TRAVIS_PULL_REQUEST" != "false" -o "$TRAVIS_BRANCH" != "$SOURCE_BRANCH" ]; then
+#    echo "Skipping deploy; just doing a build."
+#    doCompile
+#    exit 0
+#fi
 
 # Save some useful information
 REPO=`git config remote.origin.url`
@@ -32,7 +32,7 @@ git checkout $TARGET_BRANCH || git checkout --orphan $TARGET_BRANCH
 cd ..
 
 # Clean out existing contents
-rm -rf out/**/* || exit 0
+rm -rf out/* || exit 0
 
 # Run our compile script
 doCompile
@@ -50,7 +50,7 @@ fi
 
 # Commit the "changes", i.e. the new version.
 # The delta will show diffs between new and old versions.
-git add .
+git add --all
 git commit -m "Deploy to GitHub Pages: ${SHA}"
 
 # Get the deploy key by using Travis's stored variables to decrypt deploy_key.enc
