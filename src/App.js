@@ -1,21 +1,28 @@
 import React, { Component } from 'react';
 import { HashRouter as Router, Route } from 'react-router-dom';
-
 import toc from './toc';
+
+import Content from './components/Content/Content';
 import StyledNavbar from './components/Navbar/StyledNavbar';
-import ContentWrapper from './components/ContentWrapper';
+import ContentWrapper from './components/Content/ContentWrapper';
 
+const toHtml =  (props) => () => {
+  return <Content {...props}/>
+};
 
-const Routes = ({route}) => (
-  <div>
-    <Route path={route.path} exact={true} render={route.component} />
+const Routes = ({ route }) => {
+  return <div>
+    <Route path={route.path} exact={true} component={toHtml(route.content)} />
     {route.routes ? route.routes.map((nestedRoute, i) => (
-      <Routes key={i} route={nestedRoute}/>
+      <Routes key={i} route={nestedRoute} />
     )) : null}
   </div>
-);
+};
 
 class App extends Component {
+  constructor() {
+    super();
+  }
 
   render() {
     return (

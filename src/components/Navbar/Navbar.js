@@ -8,15 +8,15 @@ const Title = styled.h1`
   & { text-align: center }
 `;
 
-const Navbar = ({toc}) => (
+const Navbar = ({ toc }) => (
   <div>
     <Title>
-      Geeman's<br/>A11y guide</Title>
-    {toc.map((item,i) => (<StyledLink key={i} to={item.path}>
+      Geeman's<br />A11y guide</Title>
+    {toc.map((item, i) => (<StyledLink key={i} to={item.path}>
       {item.label}
-      {item.routes ? item.routes.map((subItem,i) => (
+      {item.routes ? item.routes.map((subItem, i) => (
         <StyledSubLink key={i} to={subItem.path}>{subItem.label}</StyledSubLink>
-      )): null}
+      )) : null}
     </StyledLink> ))}
   </div>
 );

@@ -42,6 +42,21 @@ h3 {
 
 ul,
 ol {
-    margin-bottom: 18px;
+    margin-bottom: 20px;
     padding-left: 40px;
+}
+
+:not(pre) > code[class*=language-] {
+    padding: 10px 20px;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    line-height: 1.618em;
+}
+
+code {
+    font-size: 0.8em;
+}
+
+pre code {
+    display: block;
 }

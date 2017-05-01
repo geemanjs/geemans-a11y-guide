@@ -18,7 +18,7 @@ const NavbarStyles = styled.div`
 
 const StyledNavbar = (props) => (
   <NavbarStyles>
-    <Navbar {...props}/>
+    <Navbar {...props} />
   </NavbarStyles>
 );
 

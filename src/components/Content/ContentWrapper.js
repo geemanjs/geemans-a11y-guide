@@ -7,4 +7,4 @@ export default styled.div`
     padding: 40px 60px;
     max-width: 560px;
   }
-`
+`;

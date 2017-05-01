@@ -1,20 +1,25 @@
 {
   "name": "a11y-training",
   "version": "0.1.0",
-  "homepage":"https://geeman201.github.io/geemans-a11y-guide/",
+  "homepage": "https://geeman201.github.io/geemans-a11y-guide/",
   "dependencies": {
+    "markdown-with-front-matter-loader": "^0.1.0",
+    "prismjs": "^1.6.0",
     "react": "^15.5.4",
     "react-dom": "^15.5.4",
+    "react-helmet": "^5.0.3",
     "react-router": "^4.1.1",
     "react-router-dom": "^4.1.1",
     "styled-components": "^1.4.5"
   },
   "devDependencies": {
+    "prettier": "^1.2.2",
     "react-scripts": "0.9.5"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
+    "format": "prettier --single-quote --print-width=120 --write src/**/**.js",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   }
