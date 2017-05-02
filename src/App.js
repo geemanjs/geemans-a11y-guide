@@ -6,8 +6,8 @@ import Content from './components/Content/Content';
 import StyledNavbar from './components/Navbar/StyledNavbar';
 import ContentWrapper from './components/Content/ContentWrapper';
 
-const toHtml =  (props) => () => {
-  return <Content {...props}/>
+const toHtml = (props) => () => {
+  return <Content {...props} />
 };
 
 const Routes = ({ route }) => {
@@ -26,9 +26,11 @@ class App extends Component {
         <div>
           <StyledNavbar toc={toc} />
           <ContentWrapper>
-            {toc.map((tocItem, i ) => {
-             return <Routes key={i} route={tocItem} />
-            })}
+            {
+              toc.map((tocItem, i) => {
+                return <Routes key={i} route={tocItem} />
+              })
+            }
           </ContentWrapper>
         </div>
       </Router>

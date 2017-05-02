@@ -10,7 +10,7 @@ const NavbarStyles = styled.div`
     background-color: #4A444A;
     border-right: 1px solid #2C282C;
     width: ${props => props.open ? '300px' : '0'};
-    width: 340px;
+    width: 300px;
     height: 100%;
     padding-top: 40px;
   }

@@ -1,7 +1,7 @@
 class FileStore {
 
   constructor() {
-    this.files = require.context('!markdown-with-front-matter!../documentation/', true, /\.md$/);
+    this.files = require.context('!markdown-with-front-matter?passoverHTML=true!../documentation/', true, /\.md$/);
   }
 
   getFile(file) {

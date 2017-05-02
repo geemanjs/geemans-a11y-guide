@@ -46,6 +46,10 @@ ol {
     padding-left: 40px;
 }
 
+ul ul {
+    margin-bottom: 10px;
+}
+
 :not(pre) > code[class*=language-] {
     padding: 10px 20px;
     white-space: pre-wrap;
@@ -55,8 +59,39 @@ ol {
 
 code {
     font-size: 0.8em;
+    background-color: #2D2D2D;
+    padding: 5px;
+    color: #CCC;
+    border-radius: 5px;
 }
 
 pre code {
     display: block;
+}
+
+blockquote {
+    background-color: #F5F5F5;
+    padding: 5px 10px;
+    border-left: 10px solid #F4EB49;
+    font-style: italic;
+    font-size: 0.8em;
+    font-family: "futura-pt", "helvetica neue", sans-serif;
+    color: #4A444A;
+}
+blockquote p:last-of-type {
+    margin-bottom: 0;
+}
+.section-with-aside {
+    margin-right: -75%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.section-with-aside div {
+    flex: 0 0 600px
+}
+
+aside {
+    flex: 0 0 400px;
+    /*max-width: 600px;*/
 }
