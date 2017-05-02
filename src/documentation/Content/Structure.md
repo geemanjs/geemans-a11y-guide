@@ -2,11 +2,20 @@
 title: Structure
 ---
 ## Structure
-
-Assistive tools use the structure of your HTML to determine the users journey through the page. 
-
+<div class="section-with-aside"><div>
+Assistive tools use the structure of your HTML to determine the users journey through the page. Good semantics make it easier for 
+assistive tools to interpret the meaning and thus offer a better experience. A positive side effect of good semantics will be the 
+improvement of your SEO ranking.
+</div>&nbsp;
+<aside>
+> * `<nav>` is used for left navbar
+* `<article>` is used for main content
+* `<aside>` is used for this right hand bar. 
+* `<aside>` merely supplements the main content
+</aside>
+</div>&nbsp;
 ### Essentials
-* Split your page into regions and 
+* Split your page into regions and use the `role` attribute to describe them 
 * Use the 'correct' tag for the job
   * Section headers `h1 .. h6` to create navigable structure in the document
   * List constructs `dl` lists for key/value pairs, `ul` for unordered, `ol` where order matters

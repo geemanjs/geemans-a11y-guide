@@ -6,9 +6,10 @@ title: Overview
 Approximately 20% of the UK population have a disability. That's 1 in every 5 people that might be unable to use your website or 
 application. The web is often 'just another place' where this minority are forgotten so the aim of this guide is to enable Software Engineers to produce better code to offer a better experience for those who require assistive technologies.
 </div>&nbsp;
-<aside>
-> Paragraph width is ~70 characters
-</aside>
+<aside title="On this site">
+> * Paragraph width is ~70 characters
+* h1 to h4 headers help screen readers navigate
+* Headers & paragraph in different font</aside>
 </div>&nbsp;
 
 ### Is this for me? 
