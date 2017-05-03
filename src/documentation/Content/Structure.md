@@ -14,6 +14,7 @@ improvement of your SEO ranking.
 * `<aside>` merely supplements the main content
 </aside>
 </div>&nbsp;
+
 ### Essentials
 * Split your page into regions and use the `role` attribute to describe them 
 * Use the 'correct' tag for the job
@@ -29,29 +30,59 @@ improvement of your SEO ranking.
  * [W3 Web Accessibility Tutorials](https://www.w3.org/WAI/tutorials/page-structure/)
  * [W3 Web Content Accessibility Guidelines](https://www.w3.org/TR/WCAG10-HTML-TECHS/#document)
  
-
+<br />
 ### Examples
-<div class="section-with-aside"><div>
+
 Consider the following page:
+* Insert image here
  
-This could be coded in a few different ways: 
+A beginner would typically do something like the following: 
+<div class="section-with-aside"><div>
 ```html
 <body>
-  <nav class="nav-bar">...</nav>
-  <div class="left-bar">...</div>
-  <div class="right-bar">...</div>
-</body>
-```
-```html
-<body>
-  <nav></nav>
-  <div></div>
-  <div></div>
+  <div class="nav-bar">My navbar</div>
+  <div class="left-bar">My left bar</div>
+  <div class="right-bar">My right bar</div>
 </body>
 ```
 </div>&nbsp;
 <aside>
-> Some content
+> #### JAWS 17 
+"My navbar, My left bar, My right bar"
 </aside>
-</div>&nbsp;
+</div>
+Although semantically valid the screen reader is unable to determine the 'meaning' of the content and therefore is unable to support the 
+users needs. 
 
+There are a few things we can do to give the best experience:
+* Use the proper HTML5 elements for describing content
+* Supplement our HTML with the ARIA role attribute to highlight to the tools what is contained.
+
+The following code offers best support across all browsers & tools:
+<div class="section-with-aside"><div>
+```html
+<body>
+  <nav role="navigation">My navbar</nav>
+  <div role="main">My left bar</div>
+  <aside role="complementary">My right bar</aside>
+</body>
+```
+</div>&nbsp;
+<aside>
+> #### JAWS 17 
+"Navigation: My navbar, Main: My left bar, Complementary: My right bar"
+</aside>
+</div>
+#### Page Region Tags
+These HTML tags are the most common for defining page regions and should be used like `<header>Header content</header>`
+ * `header`
+ * `main`
+ * `footer`
+ * `nav`
+ * `aside`
+ * `section`
+ * `article`
+ 
+#### Useful Aria Roles
+This [Mozilla article on Aria Roles](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Techniques) describes page 
+region and widget roles.

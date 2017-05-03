@@ -12,18 +12,21 @@ issues. However, with CSS3 `@font-face` it's becoming much more common for custo
 </aside>
 </div>&nbsp;
 ### Essentials
-* Prefer `<strong>` to`<b>` and `<em>` to `<i>` as they are more semantic
+* Prefer `<strong>` to `<b>` and `<em>` to `<i>` as they are more semantic
 * Prefer the above over CSS font styling for emphasis `font-weight: bold`
+* Use real text rather than text within graphics
 * Ensure a clear distinction between different components. It's quite common for different header and body fonts
 * Make sure your text has sufficient colour contrast for it's size
 * Use `<p>` tag for multi line text
 
+<br/>
 #### More info
 * [WCAG Colour Contrast Checker](https://colour-contrast.github.io/)
 * [Strong vs bold argument](http://accessibility.psu.edu/boldfacehtml/)
 * [Font selection guidance](http://webaim.org/techniques/fonts/)
 * [Writing style checker](http://www.hemingwayapp.com/)
 
+<br/>
 ### Example
 <div class="section-with-aside"><div>
 ```html

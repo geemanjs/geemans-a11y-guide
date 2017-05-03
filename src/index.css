@@ -14,10 +14,6 @@ p {
     margin-bottom: 20px;
 }
 
-p:last-of-type {
-    margin-bottom: 40px;
-}
-
 h1, h2, h3, h4, h5 {
     font-family: "futura-pt", "Helvetica Neue", sans-serif;
     font-weight: 500;
@@ -57,9 +53,15 @@ ul ul {
     line-height: 1.618em;
 }
 
+pre[class*=language-] {
+    padding: 1em;
+    margin: 0;
+    overflow: auto;
+}
+
 code {
     font-size: 0.8em;
-    background-color: #f0f0f0;
+    background-color: #F0F0F0;
     padding: 5px;
     color: #000;
     border-radius: 5px;
@@ -81,15 +83,15 @@ blockquote {
 
 blockquote p:last-of-type,
 blockquote ul, blockquote ol {
-
 }
+
 .section-with-aside {
     margin-right: -75%;
     display: flex;
     justify-content: space-between;
 }
 
-.section-with-aside div {
+.section-with-aside > div {
     flex: 0 0 600px
 }
 
@@ -102,4 +104,12 @@ aside p:last-of-type,
 aside ul,
 aside ol {
     margin-bottom: 0;
+}
+
+*:focus {
+    outline: 4px solid #F4EB49
+}
+
+.no-margin {
+    margin: 0;
 }

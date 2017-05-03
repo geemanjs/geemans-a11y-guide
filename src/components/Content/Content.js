@@ -10,6 +10,7 @@ class Content extends React.Component {
 
   render() {
     const { title, description, __content, og } = this.props;
+    console.log(__content);
     return (
       <section>
         <Helmet
