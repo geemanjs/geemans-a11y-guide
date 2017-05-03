@@ -42,7 +42,7 @@ const TextualInputs = () => (
       <ul>
         <li>Removal of <code>required</code> from the input</li>
         <li>Addition of '(Optional)' to the label</li>
-        <li>Alteration to <code>placeholder</code> so visual users no what the field is</li>
+        <li>Alteration to <code>placeholder</code> so visual users know what the field is</li>
       </ul>
     </p>
     <Input type-="text" label="Name" placeholder={'e.g John'} required={false} />
