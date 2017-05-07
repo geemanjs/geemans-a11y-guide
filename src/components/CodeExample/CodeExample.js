@@ -1,3 +1,4 @@
+/* eslint-disable */
 import React from 'react';
 import Prism from 'prismjs';
 
@@ -5,6 +6,7 @@ export default class CodeExample extends React.Component {
   componentDidMount() {
     Prism.highlightAll();
   }
+
   render() {
     return (
       <pre className={'lang' + this.props.syntax}>

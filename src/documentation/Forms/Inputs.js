@@ -11,17 +11,25 @@ const TextualInputs = () => (
     </p>
     <h3>Essentials</h3>
     <ul>
-      <li>Always link an input field to a label <code>&lt;label for="" ...</code> and <code>&lt;input id="" ...</code>. Remember id's must
+      <li><strong>Every single field needs a label</strong></li>
+      <li><strong>Always link an input field to a label</strong> (It's that important it's there twice) <code>&lt;label for="" ...</code> and <code>&lt;input id="" ...</code>. Remember id's must
         be unique on a page
       </li>
       <li>Ensure the label has a 'descriptive' name</li>
-      <li>Identify 'optional' fields rather than mandatory. Why is it there if it's optional?</li>
-      <li>Although unpreferred if labels need to be hidden see the advice below</li>
+      <li>Identify 'optional' fields rather than mandatory. Why is it there if it's optional? It's possible you'll just end up with 'dirty' data</li>
+      <li>Although unprefferred if labels need to be hidden see the advice in 'Input with label hidden'</li>
+      <li>Vertically aligned forms are easier to comprehend</li>
     </ul>
     <h4>More info</h4>
+    <ul>
+      <li><a href="http://usability.com.au/2013/04/accessible-forms-1-labels-and-identification/">In depth write up on 'why?'</a></li>
+      <li><a href="https://www.w3.org/WAI/tutorials/forms/">W3 forms tutorial</a></li>
+      <li><a href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/forms/Basic_form_hints">Mozilla's textual field advice</a></li>
+    </ul>
+    <br />
     <h3>Examples</h3>
     <h4>Required Input with label</h4>
-    <p className="no-margin">The recommended method of displaying an input. A simple label with input</p>
+    <p className="no-margin">The recommended method and the best from an accessibility perspective. A simple label with input vertically aligned</p>
     <section className="section-with-aside">
       <div>
         <Input type-="text" label="Name" placeholder={'e.g John'} required={true} />

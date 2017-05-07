@@ -10,7 +10,8 @@ const toc = [
       { label: 'Structure', path: '/content/structure', component: MdFileService.asComponent('./Content/Structure.md'), routes: [] },
       { label: 'Typography', path: '/content/typography', component: MdFileService.asComponent('./Content/Typography.md'), routes: [] },
       { label: 'Tables', path: '/content/tables', component: MdFileService.asComponent('./Content/Tables.md'), routes: [] },
-      { label: 'Colour', path: '/content/colour', component: MdFileService.asComponent('./Content/Colour.md'), routes: [] }
+      { label: 'Colour', path: '/content/colour', component: MdFileService.asComponent('./Content/Colour.md'), routes: [] },
+      { label: 'Images & Icons', path: '/content/images', component: MdFileService.asComponent('./Content/Images.md'), routes: [] }
     ]
   },
   {
