@@ -8,6 +8,7 @@ body {
     text-align: justify;
     line-height: 1.618em;
     font-size: 1.25em;
+    color: #212529;
 }
 
 p {
@@ -72,13 +73,13 @@ pre code {
 }
 
 blockquote {
-    background-color: #F5F5F5;
+    background-color: #f8f9fa;
     padding: 5px 10px;
-    border-left: 10px solid #F4EB49;
+    border-left: 10px solid #ffd43b;
     font-style: italic;
     font-size: 0.8em;
     font-family: "futura-pt", "helvetica neue", sans-serif;
-    color: #4A444A;
+    color: #495057;
 }
 
 blockquote p:last-of-type,
@@ -107,7 +108,7 @@ aside ol {
 }
 
 *:focus {
-    outline: 4px solid #F4EB49
+    outline: 4px solid #ffd43b
 }
 
 .no-margin {

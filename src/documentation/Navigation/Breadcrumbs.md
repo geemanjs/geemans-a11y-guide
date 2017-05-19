@@ -1,4 +1,0 @@
----
-title: Breadcrumbs
----
-## Breadcrumbs

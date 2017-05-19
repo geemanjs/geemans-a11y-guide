@@ -8,15 +8,15 @@ const StyledLink = styled(Link)`
     margin-left: 30px;
     margin-right: 30px;
     padding: 10px;
-    color: #F4EB49;
-    border-bottom: 1px solid #F4EB49;
+    color: #ffd43b;
+    border-bottom: 1px solid #ffd43b;
     text-decoration: none;
     font-family: "futura-pt", "Helvetica Neue", sans-serif;
     outline: 0;
   }
 
   &:hover, &:focus {
-    background-color: #F4EB49;
+    background-color: #ffd43b;
     color: #4A444A
   }
 `;

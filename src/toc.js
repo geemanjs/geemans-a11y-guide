@@ -1,6 +1,8 @@
 import MdFileService from './containers/MdFileService';
 import Validation from './documentation/Forms/Validation';
 import TextualInputs from './documentation/Forms/Inputs';
+import Tables from './documentation/Content/Tables';
+import Breadcrumbs from './documentation/Navigation/Breadcrumbs';
 
 const toc = [
   { label: 'Overview', path: '/overview', component: MdFileService.asComponent('./Index.md') },
@@ -9,7 +11,7 @@ const toc = [
     routes: [
       { label: 'Structure', path: '/content/structure', component: MdFileService.asComponent('./Content/Structure.md'), routes: [] },
       { label: 'Typography', path: '/content/typography', component: MdFileService.asComponent('./Content/Typography.md'), routes: [] },
-      { label: 'Tables', path: '/content/tables', component: MdFileService.asComponent('./Content/Tables.md'), routes: [] },
+      { label: 'Tables', path: '/content/tables', component: Tables, routes: [] },
       { label: 'Colour', path: '/content/colour', component: MdFileService.asComponent('./Content/Colour.md'), routes: [] },
       { label: 'Images & Icons', path: '/content/images', component: MdFileService.asComponent('./Content/Images.md'), routes: [] }
     ]
@@ -20,10 +22,9 @@ const toc = [
       {
         label: 'Breadcrumbs',
         path: '/navigation/breadcrumbs',
-        component: MdFileService.asComponent('./Navigation/Breadcrumbs.md'),
+        component: Breadcrumbs,
         routes: []
       },
-      { label: 'Hamburger', path: '/navigation/hamburger', component: MdFileService.asComponent('./Navigation/Hamburger.md'), routes: [] },
       { label: 'Links', path: '/navigation/links', component: MdFileService.asComponent('./Navigation/Links.md'), routes: [] }
     ]
   },

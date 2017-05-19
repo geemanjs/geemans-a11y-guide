@@ -16,7 +16,7 @@ const StyledSubLink = styled(Link)`
   }
   
   &:hover, &:focus {
-    background-color: #F4EB49;
+    background-color: #ffd43b;
     color: #4A444A;
   }
   

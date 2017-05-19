@@ -6,8 +6,8 @@ import Navbar from './Navbar';
 const NavbarStyles = styled.div`
   & {
     position:fixed; 
-    color:#F4EB49;
-    background-color: #4A444A;
+    color:#ffd43b;
+    background-color: #343a40;
     border-right: 1px solid #2C282C;
     width: ${props => props.open ? '300px' : '0'};
     width: 300px;

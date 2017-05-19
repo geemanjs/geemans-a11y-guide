@@ -21,3 +21,7 @@ text colour is to low.
 * [WCAG2.0 colour](https://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-without-color.html)
 * ['We Are Color Blind'](http://wearecolorblind.com/)
 * [Colour Contrast Checker](https://colour-contrast.github.io/)
+
+#### Recommended guide
+* [Open Colour](https://yeun.github.io/open-color/) - A standard and method for picking accessible colour 
+combinations (And they look good too!)

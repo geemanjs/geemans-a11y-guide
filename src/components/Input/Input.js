@@ -32,10 +32,10 @@ const StyledWrapper = styled.div`
   }
 `;
 
-const Input = ({ label, type, placeholder, displayLabel = true, required = true }) => (
+const Input = ({ label, type, placeholder = '', displayLabel = true, required = true, onChange, errorId=false}) => (
   <StyledWrapper>
     <StyledLabel htmlFor={'input_' + ++id} display={displayLabel}>{label} {required ? null : '(optional)'}</StyledLabel>
-    <StyledInput id={'input_' + id} type={type} placeholder={placeholder} required={required} />
+    <StyledInput id={'input_' + id} type={type} placeholder={placeholder} required={required} onChange={onChange} aria-describedby={errorId}/>
   </StyledWrapper>
 );
 
