@@ -6,6 +6,9 @@ import { Tab, TabList, TabPanel, Tabs } from 'react-tabs';
 
 //language=SCSS
 const StyledTabs = styled.div`
+  & {
+    padding: 20px;
+  }
   .react-tabs__tab-list {
     list-style: none;
     margin: 0;
@@ -22,7 +25,7 @@ const StyledTabs = styled.div`
   }
 
   .react-tabs__tab--selected {
-    border-bottom: 4px solid #20C997
+    border-bottom: 4px solid #20C997;
   }
 
   .react-tabs__tab-panel--selected {

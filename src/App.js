@@ -7,7 +7,7 @@ import ContentWrapper from './components/Content/ContentWrapper';
 
 const Routes = ({ route }) => {
   return <div>
-    <Redirect from="/" to="/Overview" />
+    {/*<Redirect from="/" to="/Overview" />*/}
     <Route path={route.path} exact={true} component={route.component} />
     {route.routes ? route.routes.map((nestedRoute, i) => (
       <Routes key={i} route={nestedRoute} />

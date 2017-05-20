@@ -6,6 +6,7 @@ import Breadcrumbs from './documentation/Navigation/Breadcrumbs';
 import Selects from './documentation/Forms/Selects';
 import Radios from './documentation/Forms/Radios';
 import Tabs from './documentation/Components/Tabs';
+import Dialogs from './documentation/Components/Dialogs';
 
 const toc = [
   { label: 'Overview', path: '/overview', component: MdFileService.asComponent('./Index.md') },
@@ -33,13 +34,14 @@ const toc = [
   },
   {
     label: 'Forms', path: '/forms', component: MdFileService.asComponent('./Forms/Index.md'), routes: [
-    { label: 'Validation', path: '/forms/validation', component: Validation },
-    { label: 'Textual inputs', path: '/forms/textual-inputs', component: TextualInputs },
+    { label: 'Radios & Checkboxes', path: '/forms/radios', component: Radios },
     { label: 'Selects', path: '/forms/selects', component: Selects },
-    { label: 'Radios & Checkboxes', path: '/forms/radios', component: Radios }
+    { label: 'Textual inputs', path: '/forms/textual-inputs', component: TextualInputs },
+    { label: 'Validation', path: '/forms/validation', component: Validation }
   ]
   },
   { label: 'Components', path: '/components', component: MdFileService.asComponent('./Components/Index.md'), routes: [
+    { label: 'Dialog/Modals', path: '/components/dialogs', component: Dialogs},
     { label: 'Tabs', path: '/components/tabs', component: Tabs}
   ] }
 ];
