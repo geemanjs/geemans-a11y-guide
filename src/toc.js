@@ -5,6 +5,7 @@ import Tables from './documentation/Content/Tables';
 import Breadcrumbs from './documentation/Navigation/Breadcrumbs';
 import Selects from './documentation/Forms/Selects';
 import Radios from './documentation/Forms/Radios';
+import Tabs from './documentation/Components/Tabs';
 
 const toc = [
   { label: 'Overview', path: '/overview', component: MdFileService.asComponent('./Index.md') },
@@ -38,7 +39,9 @@ const toc = [
     { label: 'Radios & Checkboxes', path: '/forms/radios', component: Radios }
   ]
   },
-  { label: 'Components', path: '/components', component: MdFileService.asComponent('./Components/Index.md'), routes: [] }
+  { label: 'Components', path: '/components', component: MdFileService.asComponent('./Components/Index.md'), routes: [
+    { label: 'Tabs', path: '/components/tabs', component: Tabs}
+  ] }
 ];
 
 export default toc;

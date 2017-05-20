@@ -10,6 +10,7 @@
     "react-helmet": "^5.0.3",
     "react-router": "^4.1.1",
     "react-router-dom": "^4.1.1",
+    "react-tabs": "^1.0.0",
     "styled-components": "^1.4.5"
   },
   "devDependencies": {
