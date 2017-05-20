@@ -8,7 +8,6 @@ const NavbarStyles = styled.div`
     position:fixed; 
     color:#ffd43b;
     background-color: #343a40;
-    border-right: 1px solid #2C282C;
     width: ${props => props.open ? '300px' : '0'};
     width: 300px;
     height: 100%;
@@ -16,10 +15,13 @@ const NavbarStyles = styled.div`
   }
   `;
 
-const StyledNavbar = (props) => (
-  <NavbarStyles>
+const StyledNavbar = (props) => {
+  console.log(props);
+  return (  <NavbarStyles>
     <Navbar {...props} />
-  </NavbarStyles>
-);
+  </NavbarStyles>)
+}
+
+
 
 export default StyledNavbar;

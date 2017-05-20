@@ -7,17 +7,43 @@ import StyledSubLink from '../Link/StyledSubLink';
 const Title = styled.h1`
   & { text-align: center }
 `;
+//  language=SCSS
+const OuterUl = styled.ul`
+ & {
+    list-style: none;
+    padding:0;
+    margin: 0;
+  }
+`;
+//  language=SCSS
+const StyledUl = styled.ul`
+  & {
+    list-style: none;
+    padding-left: 30px;
+    margin-bottom:0;
+  }
+`;
+//  language=SCSS
+const StyledLi = styled.li`
+  & {
+    margin-top: 4px;
+    margin-bottom:4px;
+  }
+`;
 
-const Navbar = ({ toc }) => (
+
+const Navbar = ({ toc, hash }) => (
   <div>
     <Title>
       Geeman's<br />A11y guide</Title>
-    {toc.map((item, i) => (<StyledLink key={i} to={item.path}>
-      {item.label}
-      {item.routes ? item.routes.map((subItem, i) => (
-        <StyledSubLink key={i} to={subItem.path}>{subItem.label}</StyledSubLink>
-      )) : null}
-    </StyledLink> ))}
+    <OuterUl>
+      {toc.map((item, i) => (<li><StyledLink key={i} to={item.path}> {item.label}</StyledLink>
+          {hash.indexOf(item.path) !== -1 ? <StyledUl>{item.routes ? item.routes.map((subItem, i) => (
+            <StyledLi><StyledSubLink key={i} to={subItem.path}>{subItem.label}</StyledSubLink></StyledLi>
+          )) : null}</StyledUl> : null}
+        </li>
+      ))}
+    </OuterUl>
   </div>
 );
 

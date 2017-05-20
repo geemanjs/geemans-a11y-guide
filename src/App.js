@@ -15,11 +15,24 @@ const Routes = ({ route }) => {
 };
 
 class App extends Component {
+  constructor() {
+    super();
+    this.state = {
+      hash: window.location.hash
+    }
+  }
+
+  componentDidMount() {
+    window.addEventListener('hashchange', () => {
+      this.setState({ hash: window.location.hash });
+    })
+  }
+
   render() {
     return (
       <Router>
         <div>
-          <StyledNavbar toc={toc} />
+          <StyledNavbar toc={toc} hash={this.state.hash} />
           <ContentWrapper>
             {
               toc.map((tocItem, i) => {
