@@ -15,7 +15,7 @@ const Validation = () => (
           email address entry may not have an @ character. The message should read 'Email expected. No @ character
           found'
         </li>
-        <li>At top/bottom of form - Messages here should be returned from the server. They are a problem with the form
+        <li>Block - Messages here should be returned from the server. They are a problem with the form
           as a whole such as an 'Issue connecting to the server' or a server error of some form. They shouldn't relate
           to an individual field.
         </li>
@@ -55,10 +55,10 @@ const Validation = () => (
     <h4>Inline Field</h4>
     <section className="section-with-aside">
       <Example>
-        <InputFieldValidation label="Number greater than 10" name="num"
-                               isValid={(value) => (value < 10 ? 'Value should be greater than 10' : null)} />
+        <InputFieldValidation label="Testing validation input (Numbers only)" name="num"
+                              isValid={(value) => (value < 10 ? 'Value should be greater than 10' : null)} />
 
-        <CodeExample header="JSX" syntax="JSX">{
+        <CodeExample header="Component" syntax="JSX">{
           `import React, { Component } from 'react';
 
 let id = 0;
@@ -91,6 +91,16 @@ class InputFieldValidation extends Component {
 export default InputFieldValidation;
 `
         }</CodeExample>
+        <br/>
+        <CodeExample header="Usage" syntax="JSX">
+          {`&lt;InputFieldValidation
+   label="Testing validation input"
+   name="num"
+   isValid={(value) =&gt; (value &lt; 10 ? 'Value should be greater than 10' : null)}
+   onChange={onChange}
+/&gt;`}
+        </CodeExample>
+        <br/>
         <CodeExample header="CSS" syntax="CSS">{
           `ul {
    list-style: none;

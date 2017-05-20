@@ -56,6 +56,7 @@ const Breadcrumbs = () => {
           <li>Labelled appropriately</li>
           <li>A list of links</li>
           <li>Have a role of navigation</li>
+          <li>Add the spacer '/' with CSS</li>
         </ul>
       </p>
       <section className="section-with-aside">
@@ -74,6 +75,7 @@ const Breadcrumbs = () => {
   );
 };`
           }</CodeExample>
+          <br/>
           <CodeExample header="CSS" syntax="CSS">{
             `ul {
    list-style: none;
@@ -120,6 +122,7 @@ li:last-of-type:after {
   );
 };`
           }</CodeExample>
+          <br/>
           <CodeExample header="CSS" syntax="CSS">{
             `ul {
    list-style: none;

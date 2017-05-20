@@ -13,7 +13,7 @@ Images are a great way to enable better comprehension of textual information.
  * [WebAIM Image techniques](http://webaim.org/techniques/images/)
  
 ### Examples
-```javascript 
+```jsx 
 import React from 'react';
 
 const Image = ({src, alt}) => (
@@ -23,7 +23,7 @@ const Image = ({src, alt}) => (
 export default Image;
 ```
 
-```javascript 
+```jsx 
 import React from 'react';
 
 const Icon = ({ type, text }) => (

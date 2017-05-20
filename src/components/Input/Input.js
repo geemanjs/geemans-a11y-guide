@@ -4,7 +4,7 @@ import styled from 'styled-components';
 let id = 0;
 
 //  language=SCSS
-const StyledInput = styled.input`
+export const StyledInput = styled.input`
   & {
     padding: 10px;
     display: block;
@@ -14,7 +14,7 @@ const StyledInput = styled.input`
 `;
 
 //  language=SCSS
-const StyledLabel = styled.label`
+export const StyledLabel = styled.label`
   & {
     display: block;
     font-size: 0.8em;
@@ -28,7 +28,7 @@ const StyledLabel = styled.label`
 const StyledWrapper = styled.div`
   & { 
     display: block;
-    margin: 20px 0;
+    margin: 0 0 10px 0;
   }
 `;
 

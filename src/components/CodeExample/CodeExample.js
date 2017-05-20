@@ -3,7 +3,7 @@ import React, {Component} from 'react';
 import styled from 'styled-components';
 import Prism from 'prismjs';
 import 'prismjs/components/prism-jsx.min';
-import 'prismjs/components/prism-css.min';
+import 'prismjs/components/prism-css-extras.min';
 
 //  language=SCSS
 const Header = styled.h5`
@@ -19,6 +19,10 @@ const Header = styled.h5`
   }
 `;
 
+const Pre = styled.pre`
+  max-width: 580px;
+`
+
 export default class CodeExample extends Component {
   componentDidMount() {
     Prism.highlightAll();
@@ -28,10 +32,10 @@ export default class CodeExample extends Component {
     return (
       <div>
         <Header>{this.props.header}</Header>
-        <pre className={'lang' + this.props.syntax}>
+        <Pre className={'lang' + this.props.syntax}>
           <code className={'lang-' + this.props.syntax} dangerouslySetInnerHTML={{ __html: this.props.children }}>
         </code>
-      </pre>
+      </Pre>
       </div>
     )
   }
