@@ -60,16 +60,19 @@ pre[class*=language-] {
     overflow: auto;
 }
 
-code {
+code, kbd {
     font-size: 0.8em;
-    background-color: #F0F0F0;
-    padding: 5px;
+    background-color: #dee2e6;
+    font-weight: bold;
+    padding: 4px 10px;
     color: #000;
     border-radius: 5px;
 }
 
 pre code {
     display: block;
+    font-weight: 400;
+    font-size: 0.7em;
 }
 
 blockquote {

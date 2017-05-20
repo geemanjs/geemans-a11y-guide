@@ -4,6 +4,7 @@ import TextualInputs from './documentation/Forms/Inputs';
 import Tables from './documentation/Content/Tables';
 import Breadcrumbs from './documentation/Navigation/Breadcrumbs';
 import Selects from './documentation/Forms/Selects';
+import Radios from './documentation/Forms/Radios';
 
 const toc = [
   { label: 'Overview', path: '/overview', component: MdFileService.asComponent('./Index.md') },
@@ -33,7 +34,8 @@ const toc = [
     label: 'Forms', path: '/forms', component: MdFileService.asComponent('./Forms/Index.md'), routes: [
     { label: 'Validation', path: '/forms/validation', component: Validation },
     { label: 'Textual inputs', path: '/forms/textual-inputs', component: TextualInputs },
-    { label: 'Selects', path: '/forms/selects', component: Selects }
+    { label: 'Selects', path: '/forms/selects', component: Selects },
+    { label: 'Radios & Checkboxes', path: '/forms/radios', component: Radios }
   ]
   },
   { label: 'Components', path: '/components', component: MdFileService.asComponent('./Components/Index.md'), routes: [] }

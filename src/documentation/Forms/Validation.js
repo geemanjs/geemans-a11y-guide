@@ -56,7 +56,7 @@ const Validation = () => (
     <section className="section-with-aside">
       <Example>
         <InputFieldValidation label="Testing validation input (Numbers only)" name="num"
-                              isValid={(value) => (value < 10 ? 'Value should be greater than 10' : null)} />
+                              isValid={(value) => (isNaN(value) ? 'Value should be a number' : value < 10 ? 'Value should be greater than 10' :null)} />
 
         <CodeExample header="Component" syntax="JSX">{
           `import React, { Component } from 'react';

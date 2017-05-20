@@ -34,7 +34,7 @@ const Select = styled.select`
 
 const Selects = () => (
   <div>
-    <h2>Select & Radios</h2>
+    <h2>Select Menus</h2>
     <p>The biggest mistake made here is the use of a third party library to get 'pretty' select fields. Unfortunately
       these are often badly marked up and move the focus to the bottom of the page (Where the div's of the options are
       place). This results in a poor experience for both assistive tool users and mobile</p>
@@ -58,14 +58,17 @@ const Selects = () => (
     <br />
     <h3>Examples</h3>
     <h4>Simple Select</h4>
+    <p>Note the use of <code>&lt;optgroup&gt;</code> below to group related options. This makes it a lot easier to jump
+      to the wanted value in the assistive tools. It's overkill for the example below, but if you are likely to have
+      more than 10 options they should be split into logical groups.</p>
     <section className="section-with-aside">
       <Example>
         <StyledLabel display="true" htmlFor="cheese_selector">Select Cheese</StyledLabel>
         <Select id="cheese_selector">
           <option value="Select">Select cheese</option>
           <optgroup label="Hard">
-            <option value="STILTON">Stilton</option>
             <option value="CHEDDAR">Cheddar</option>
+            <option value="STILTON">Stilton</option>
           </optgroup>
           <optgroup label="Soft">
             <option value="BRIE">Brie</option>
@@ -77,8 +80,8 @@ const Selects = () => (
 &lt;select&gt;
   &lt;option value="Select"&gt;Select cheese&lt;/option&gt;
   &lt;optgroup label="Hard"&gt;
-    &lt;option value="STILTON"&gt;Stilton&lt;/option&gt;
     &lt;option value="CHEDDAR"&gt;Cheddar&lt;/option&gt;
+    &lt;option value="STILTON"&gt;Stilton&lt;/option&gt;
   &lt;/optgroup&gt;
   &lt;optgroup label="Soft"&gt;
     &lt;option value="BRIE"&gt;Brie&lt;/option&gt;
@@ -99,7 +102,7 @@ const Selects = () => (
       </Example>
       <aside>
         <blockquote>
-          On focus a clear <code>outline</code> is displayed to enable the user to know their current location
+          Alphabetically ordering the <code>&lt;option&gt;</code> makes it easy for users to jump around the list
         </blockquote>
       </aside>
     </section>
@@ -109,8 +112,8 @@ const Selects = () => (
     <p>From a user experience perspective when considering the use of a multi-select, checkboxes should be preferred.
       Users often don't realise that they can select multiple entries using the <kbd>ctrl</kbd>/<kbd>cmd</kbd> key.</p>
     <Example>
-      <StyledLabel display="true" htmlFor="cheese_selector">Select Cheese</StyledLabel>
-      <Select id="cheese_selector" multiple>
+      <StyledLabel display="true" htmlFor="cheese_selector_2">Select Cheese</StyledLabel>
+      <Select id="cheese_selector_2" multiple>
         <optgroup label="Hard">
           <option value="STILTON">Stilton</option>
           <option value="CHEDDAR">Cheddar</option>
