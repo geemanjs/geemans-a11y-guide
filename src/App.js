@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { HashRouter as Router, Route, Redirect } from 'react-router-dom';
+import { HashRouter as Router, Route } from 'react-router-dom';
 import toc from './toc';
 
 import StyledNavbar from './components/Navbar/StyledNavbar';
@@ -7,7 +7,6 @@ import ContentWrapper from './components/Content/ContentWrapper';
 
 const Routes = ({ route }) => {
   return <div>
-    {/*<Redirect from="/" to="/Overview" />*/}
     <Route path={route.path} exact={true} component={route.component} />
     {route.routes ? route.routes.map((nestedRoute, i) => (
       <Routes key={i} route={nestedRoute} />

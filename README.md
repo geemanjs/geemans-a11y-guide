@@ -1,5 +1,5 @@
 
-## Geemans A11y Guide
+## Geemans A11y Guide [![Build Status](https://travis-ci.org/Geeman201/geemans-a11y-guide.svg?branch=master)](https://travis-ci.org/Geeman201/geemans-a11y-guide)
 Approximately 20% of the UK population have a disability. That's 1 in every 5 people that might be unable to use your website or application. The web is often 'just another place' where this minority are forgotten so the aim of this guide is to enable Software Engineers to produce better code to offer a better experience for those who require assistive technologies.
 
 ### Is this for me?

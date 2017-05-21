@@ -9,7 +9,7 @@ import Tabs from './documentation/Components/Tabs';
 import Dialogs from './documentation/Components/Dialogs';
 
 const toc = [
-  { label: 'Overview', path: '/overview', component: MdFileService.asComponent('./Index.md') },
+  { label: 'Overview', path: '/', component: MdFileService.asComponent('./Index.md') },
   {
     label: 'Content', path: '/content', component: MdFileService.asComponent('./Content/Index.md'),
     routes: [
