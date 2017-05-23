@@ -97,7 +97,8 @@ li:last-of-type:after {
         </Example>
         <aside>
           <blockquote>
-           Navigation Group - Breadcrumb, Three items present, Home, Navigation, Breadcrumb.
+            VoiceOver - "Navigation Group - Breadcrumb, Three items present, Home, Navigation, Breadcrumb."<br/>
+            Note how it is described as a 'Breadcrumb'
           </blockquote>
         </aside>
       </section>
@@ -134,7 +135,8 @@ li {
         </Example>
         <aside>
           <blockquote>
-            On focus a clear <code>outline</code> is displayed to enable the user to know their current location
+            VoiceOver - "List, Three items, link Home, link Navigation, link Breadcrumb"<br/>
+            Note how there is no information describing what the links are
           </blockquote>
         </aside>
       </section>

@@ -17,3 +17,8 @@ You can use this as:
 * A talking point with colleagues
 
 The main beneficiaries will be users who have spent long enough trying to browse your site.
+
+## Setup
+The following npm/yarn commands are available:
+`yarn start` - Starts a live reloading development server
+`yarn build` - Builds the guide into a flat HTML/JS/CSS structure
