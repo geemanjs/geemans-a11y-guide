@@ -97,7 +97,7 @@ li:last-of-type:after {
         </Example>
         <aside>
           <blockquote>
-            On focus a clear <code>outline</code> is displayed to enable the user to know their current location
+           Navigation Group - Breadcrumb, Three items present, Home, Navigation, Breadcrumb.
           </blockquote>
         </aside>
       </section>

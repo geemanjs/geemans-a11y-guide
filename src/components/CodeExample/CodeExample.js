@@ -21,7 +21,7 @@ const Header = styled.h5`
 
 const Pre = styled.pre`
   max-width: 560px;
-`
+`;
 
 export default class CodeExample extends Component {
   componentDidMount() {

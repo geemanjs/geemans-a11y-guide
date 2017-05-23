@@ -151,7 +151,8 @@ label {
       <aside>
         <blockquote>
           Similar to <code>&lt;select&gt;</code> alphabetically ordering the radios & checkboxes makes for better
-          location awareness
+          location awareness to a screen reader.
+          Voiceover - "Select a cheese, 3 radios, Brie selected"
         </blockquote>
       </aside>
     </section>

@@ -46,6 +46,8 @@ const TextualInputs = () => (
       </Example>
       <aside>
         <blockquote>
+          JAWS - "Name, required, edit text field"
+          <br /><br/>
           On focus a clear <code>outline</code> is displayed to enable the user to know their current location
         </blockquote>
       </aside>
